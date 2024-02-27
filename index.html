@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inria Serif' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <title>"Avoiding Train Wrecks" An In Depth Hidden Gorge Guide</title>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="img/profile-image.png">
+            <div class="profile-content">
+                <p>Kiria Kurono</p>
+                <p>Ultros [Primal]</p>
+            </div>
+        </div>
+
+        <div class="title">
+            <h1>"Avoiding Train Wrecks"
+            <br> 
+            An In Depth Hidden Gorge Guide</h1>
+        </div>
+
+        <div class="twitch">
+            <a href="https://www.twitch.tv/yamikisaragi" target="_blank"><img src="img/twitch.png">
+            <div class="twitch-name">
+                <p>Yami Kisaragi</p></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <aside>
+            <div class="toc-title">
+                <h1 class="toc-heading">Contents</h1>
+            </div>
+            <div class="toc-list">
+                <ul class="accordion">
+                    <li><a href="#top">What Is Rival Wings?</a></li>
+
+                    <li>
+                        <input type="radio" name="accordion" id="first">
+                        <label for="first"><a href="#basic-objectives">Basic Objectives</a></label>
+                        
+                       <div class="subheading">
+                            <a href="#towers"><h1>Towers</h1></a>
+                            <a href="#the-core"><h1>The Core</h1></a>
+                        </div>
+                      
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="second">
+                        <label for="second"><a href="#party-roles">Party Roles</a></label>
+
+                        <div class="subheading">
+                            <a href="#pilot"><h1>Pilot</h1></a>
+                            <a href="#ceruleum-collector"><h1>Ceruleum (CE) Collector</h1></a>
+                            <a href="#laner"><h1>Laner</h1></a>
+                            <a href="#roamer"><h1>Roamer</h1></a>
+                        </div>
+                    </li>
+                    
+                    <li><a href="#soaring-flying">Soaring & Flying High</a></li>
+
+                    <li>
+                        <input type="radio" name="accordion" id="third">
+                        <label for="third"><a href="#ceruleum-engines">Ceruleum Engines</a></label>
+
+                        <div class="subheading">
+                            <a href="#main-ceruleum"><h1>Main Ceruleum Tank</h1></a>
+                            <a href="#gobtanks"><h1>Gobtanks</h1></a>
+                            <a href="#gobblejuice"><h1>Gobblejuice</h1></a>
+                            <a href="#gobcrates"><h1>Gobcrates</h1></a>
+                            <a href="#supply"><h1>Supply Priority Summary</h1></a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="accordion" id="fourth">
+                        <label for="fourth"><a href="#merc">Goblin Mercenaries</a></label>
+
+                        <div class="subheading">
+                            <a href="#green-circle"><h1>Green Circle (In)</h1></a>
+                            <a href="#red-triangle"><h1>Red Triangle (Out)</h1></a>
+                            <a href="#gobby-shootout"><h1>Gobby Shootout</h1></a>
+                            <a href="#gobby-bombs"><h1>Gobby Bombs</h1></a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="accordion" id="fifth">
+                        <label for="fifth"><a href="#machina">The Machina</a></label>
+
+                        <div class="subheading">
+                            <a href="#cc"><h1>Cruise Chaser</h1></a>
+                            <a href="#opp"><h1>Oppresor</h1></a>
+                            <a href="#brute"><h1>Brute Justice</h1></a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="accordion" id="sixth">
+                        <label for="sixth"><a href="#strategies">Strategies & Tips</a></label>
+
+                        <div class="subheading">
+                            <a href="#strategies"><h1>Detailed Hidden Gorge Map</h1></a>
+                            <a href="#mammet-rushing"><h1>Mammet Rushing</h1></a>
+                            <a href="#oppressor-rushing"><h1>Oppressor Rushing</h1></a>
+                            <a href="#tower-holding"><h1>Tower Holding</h1></a>
+                            <a href="#gorge-sniping"><h1>Gorge Sniping</h1></a>
+                            <a href="#blind-siding"><h1>Blind Siding Cannons</h1></a>
+                            <a href="#cannon-sniping"><h1>Cannon Sniping</h1></a>
+                            <a href="#geyser-hopping"><h1>Geyser Hopping</h1></a>
+                            <a href="#map-it-out"><h1>Map It Out</h1></a>
+                            
+                        </div>
+                    </li>
+
+                    <li><a href="#rewards">Rewards</li></a>
+                </ul>
+            </div>
+        </aside>
+
+        <main>
+            <div class="rival-wings">
+                <h1 id="rival-wings" class="a-length" style="padding-top:10px; margin-top:20px;" >What Is Rival Wings?</h1>
+                <p>
+                    Both teams will have a North and South tower to protect their core. 
+                    Each tower has a defensive field that will mitigate damage taken and heal you if you stand within its aura. 
+                    Keep this in mind when being pushed against players on the opposing team. 
+                    All alliances on your team gain Ceruleum and Soaring stacks when you destroy a tower.
+                    Once a tower is destroyed the field disappears and the team's core becomes exposed allowing it to take damage from the opposing side.
+                </p>
+            </div>
+
+            <div class="basic-objectives">
+                <h1 id="basic-objectives" class="a-length">Basic Objectives</h1>
+                <figure>
+                    <img src="img/basic.png">
+                    <figcaption>Hidden Gorge Map With Objectives</figcaption>
+                </figure>
+                <p>
+                    The first team to destroy the core located on the opponent’s base will be declared the winner.
+                    <br>
+                    <br>
+                    In the event neither team destroys a core, victory will be decided based on each team’s remaining core HP, 
+                    number of towers, and tower HP, in that order. In the event these values are the same for both teams, the match 
+                    will end in a draw. 
+                    <br>
+                    <br>
+                    Let’s cover the two main objectives to destroy in Hidden Gorge:
+                </p>
+
+                <h2 id="towers" class="a-length">Towers</h2>
+                <div class="tower-images">
+                    <figure>
+                        <img src="img/red-tower.png">
+                        <figcaption>Red Tower</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/blue-tower.png">
+                        <figcaption>Blue Tower</figcaption>
+                    </figure>
+                </div>
+                <p>
+                    Both teams will have a North and South tower to protect their core. Each of your towers has a defensive field that will mitigate 
+                    damage taken and heal you if you stand within its aura. Keep this in mind when being pushed against players on the opposing team.
+                    <br>
+                    <br>
+                    All alliances on your team gain Ceruleum and <span id="soaring-icon"><strong>Soaring</strong></span> stacks when you destroy a tower. Once a tower is destroyed the defensive field 
+                    disappears and the team’s core becomes exposed allowing it to take damage from the opposing side. 
+                </p>
+
+                <h2 id="the-core" class="a-length">The Core</h2>
+                <div class="core-images">
+                    <figure>
+                        <img src="img/red-core.png">
+                        <figcaption>Red Core</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/blue-core.png">
+                        <figcaption>Blue Core</figcaption>
+                    </figure>
+                </div>
+                <p>
+                    Both teams will have a core located inside their base. The core cannot be damaged until at least one tower is destroyed. It is, however, 
+                    ideal to destroy both of the opposing team’s towers first as any damage inflicted upon the core with a tower still up will be significantly mitigated.
+                </p>
+            </div>
+
+            <div class="party-roles">
+                <h1 id="party-roles" class="a-length">Party Roles</h1>
+                <p>
+                    There are four roles you should consider assigning in each party to maximize efficiency:
+                </p>
+                <h2 id="pilot" class="a-length">Pilot</h2>
+                <p>
+                    Pilots are in charge of mounting the machina for your party.
+                    <br>
+                    <br>
+                    <strong>Try to pay close attention to the machina UI and map to see what your teammates/enemies have already mounted onto the field.</strong>
+                    <br>
+                    <br>
+                    Machina usage is elaborated on <a href="#machina">here.</a>
+                </p>
+
+            <h2 id="ceruleum-collector" class="a-length">Ceruleum (CE) Collector</h2>
+            <p>
+                CE is required to get your party’s machina onto the battlefield. Machina are essential to winning games so having at least one person in a party collecting CE is important.
+                <br>
+                <br>
+                <strong>Keep your eye on the CE gauge to ensure that it is always at least 50 CE.</strong>
+                <br>
+                <br>
+                You can gather CE in the following ways:
+            </p>
+            <h3>Gathering Ceruleum Tanks</h3>
+            <p>
+                Gather the glowing tanks that you see on the ground. You can find these under and around the train station at the middle of the map.
+
+                Each one will add 10 CE to your party’s gauge. Once you have 50 CE your team can deploy a machina.
+            </p>
+            <h3>Mammets</h3>
+            <p>
+                Mammets are NPCs that will continuously spawn from both lanes from each side. They will only attack other mammets and will ignore players. While they can be healed, 
+                friendly mammets have a 50% incoming heal penalty from players.
+
+                Each enemy mammet kill can give your party up to a maximum of 20 CE based on how much damage you inflict upon it.
+
+                If your team’s mammets reach an objective, such as a tower or core, it will self-destruct in order to damaging the objective.
+            </p>
+            <h2 id="laner" class="a-length">Laner</h2>
+            <p>
+                As a Laner your primary job is to push mammets and help escort your machina to the opposing teams objectives. Your job is also to defend against any advances from the 
+                opposing team.
+            </p>
+            <h2 id="roamer" class="a-length">Roamer</h2>
+            <p>
+                As a roamer you will assist the CE Collector or Laner depending on the flow of the match. Your job is also to help capture side objectives like the trains or goblin mercenaries 
+                throughout the entirety of the match.
+            </p>
+            </div>
+
+            <div class="soaring-flying">
+                <h1 id="soaring-flying" class="a-length"><span id="soaring-icon">Soaring</span> & <span id="flying-high-icon">Flying High</span></h1>
+                <p>
+                    <span id="soaring-icon"><strong>Soaring</strong></span> is an enhancing buff your party receives when defeating enemy players. Stacks are also increased for your party and all alliances when an enemy tower is destroyed. 
+                    This buff can stack up to 20 times, increasing damage dealt and HP restored via healing spells/skills up to a maximum of 50%.
+                    <br>
+                    <br>
+                    Upon reaching 20 stacks you will gain the <span id="flying-high-icon"><strong>Flying High</strong></span> status which will increase the rate which your Adrenaline gauge fills by 100%.
+                    <br>
+                    <br>
+                    <strong>The effects of <span id="soaring-icon">Soaring</span> and <span id="flying-high-icon">Flying High</span> are not applied when mounted in a machina.</strong>
+                </p>
+            </div>
+
+            <div class="ceruleum-engines">
+                <h1 id="ceruleum-engines" class="a-length">Ceruleum Engines</h1>
+                <figure>
+                    <img src="img/ceruleum-engine.png">
+                    <figcaption>Ceruleum Engine</figcaption>
+                </figure>
+                <p>
+                    Throughout the entirety of the match, trains will arrive at the middle of the map carrying supplies that your team can claim. There is a timer on your UI counting down to 
+                    the train’s arrival as well as a railroad crossing sound to signify the incoming train.
+                    <br>
+                    <br>
+                    <strong>Be very cautious when crossing railroad tracks as getting run over will one shot you (even in a machina).</strong>
+                    <br>
+                    <br>
+                    In order to claim the supplies, you will need to occupy the station by standing next to the train when it arrives. Keep in mind you do not need to stand on the train itself. 
+                    You only need to be standing within the highlighted zone to contest it. The train will release steam upon arrival so don’t jump on it right away or else you’ll be blown off.
+                    <br>    
+                    <br>
+                    There is a gauge that will fill up overtime and will fill more quickly if you have more team members present than the opposing team. Standing near the train itself will give 
+                    you a damage buff, so keep that in mind when fighting over the train.
+                    <br>
+                    <br>
+                    One <span id="soaring-icon"><strong>Soaring</strong></span> stack will be awarded to every alliance upon successfully capturing a train.
+                    <br>    
+                    <br>
+                    That being said, contesting the train isn’t always ideal. The supplies it has to offer at times aren’t worth the investment and you should use that time to capture other 
+                    objectives. You can check to see what the train will offer before it arrives by checking the train UI.
+                    <br>
+                    <br>
+                    The train offers four types of supplies:
+                </p>
+                <h2 id="main-ceruleum" class="a-length"><span id="ceruleum-tank-icon">Main Ceruleum Tank</span></h2>
+                <p>
+                    This will give each party 50 CE. This is an extremely helpful supply and should be put on high priority especially if it’s the first train at the start of the game. Even if 
+                    your team is all full on CE you should still contest it to deny the other team from gaining it.
+                </p>
+                <h2 id="gobtanks" class="a-length"><span id="gobtanks-icon">Gobtanks</span></h2>
+                <div class="gobtanks-images">
+                    <figure>
+                        <img style="border:none;" src="img/red-gobtank.png">
+                        <figcaption>Red Gobtank</figcaption>
+                    </figure>
+                    <figure>
+                        <img style="border:none;" src="img/blue-gobtank.png">
+                        <figcaption>Blue Gobtank</figcaption>
+                    </figure>
+                </div>
+                <p>
+                    This will deploy two gobtanks down both the North and South lane. This can be helpful when pushing and defending lanes. While they can be healed, friendly gobtanks have 
+                    a 50% incoming heal penalty from players.
+                    <br>
+                    <br>
+                    This supply should be put on medium priority.
+                </p>
+                <h2 id="gobblejuice" class="a-length"><span id="gobbiejuice-icon">Gobbiejuice</span></h2>
+                <p>
+                    This will give everyone on the team Adrenaline (Limit Break). This should be put on extremely low priority.
+                    <br>
+                    <br>
+                    I’d honestly tell you to ignore it whenever it pops up since you could be using that time for more important objectives. If you do decide to contest it, do not devote more 
+                    than four players to do so.
+                </p>
+                <h2 id="gobcrates" class="a-length"><span id="gobcrates-icon">Gobcrates</span></h2>
+                <p>
+                    This supply will start appearing after ten minutes into the game. It will give you every supply effect in the game along with three Soaring stacks for every alliance if you 
+                    manage to claim it.
+                    <br>
+                    <br>
+                    This should be put on the highest priority. These can greatly shift the momentum of the match and should be contested whenever the opportunity presents itself.
+                </p>
+                <h2 id="supply" class="a-length">Supply Priority Summary </h2>
+                <p>
+                    <span id="gobcrates-icon-sm">Gobcrates</span>      > <span id="ceruleum-tank-icon-sm">Main Ceruleum Tank</span>      > <span id="gobtanks-icon-sm">Gobtanks</span>     > 
+                    <span id="gobbiejuice-icon-sm">Gobbiejuice</span>
+                </p>
+            </div>
+
+            <div class="gob-merc">
+                <h1 id="merc" class="a-length"><span id="merc-icon">Goblin Mercenaries</span></h1>
+                <div class="gob-merc-images">
+                    <figure>
+                        <img style="border:none;" src="img/gob-merc-red.png">
+                        <figcaption>Red Goblin Mercenary</figcaption>
+                    </figure>
+                    <figure>
+                        <img style="border:none;" src="img/gob-merc-neutral.png">
+                        <figcaption>Neutral Goblin Mercenary</figcaption>
+                    </figure>
+                    <figure>
+                        <img style="border:none;" src="img/gob-merc-blue.png">
+                        <figcaption>Blue Goblin Mercenary</figcaption>
+                    </figure>
+                </div>
+                <p>
+                    After a certain amount of time passes, goblin mercenaries will appear either North or South of the map. They will attack any player that approaches.
+                    <br>
+                    <br>
+                    The team that manages to deal the most damage to him will form a contract where he will assist them in pushing the respective lane he was fought in. The mercenary in lane 
+                    is extremely potent and can cause some serious damage if left unattended by the opposing team. While he can be healed, friendly mercenaries have a 50% incoming heal penalty 
+                    from players.
+                    <br>
+                    <br>
+                    <strong>This objective should be put on high priority.</strong>
+                    <br>
+                    <br>
+                    There are four attacks he uses that some of you may recognize from the Alexander Creator boss <strong>Lamebrix Strikebocks:</strong>
+                </p>
+                <div class="merc-mech-images">
+                    <figure>
+                        <h3 id="green-circle" class="a-length">Green Circle (In Mechanic)</h3>
+                        <img src="img/gob-green-circle.png">
+                        <figcaption>This attack is a large donut AoE with the safe spot being within melee range. Get near him to avoid this.</figcaption>
+                    </figure>
+                    <figure>
+                        <h3 id="red-triangle" class="a-length">Red Triangle (Out Mechanic)</h3>
+                        <img src="img/gob-red-triangle.png">
+                        <figcaption>This is a large centered AoE near him. Move away from him to avoid getting hit.</figcaption>
+                    </figure>
+                </div>
+                <h3 id="gobby-shootout" class="a-length">Gobby Shootout</h3>
+                <div class="merc-mech-images-2">
+                    <figure>
+                        <img src="img/gobby-shootout-cw.png">
+                        <figcaption>Clockwise</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/gobby-shootout-ccw.png">
+                        <figcaption>Counter Clockwise</figcaption>
+                    </figure>
+                </div>
+                <p>
+                    This is a rotating laser firing attack that he will do clockwise or counter clockwise depending on which way the arrows rotate. Get on the opposite side of where he’s going 
+                    to start shooting and move accordingly to avoid it.
+                </p>
+                <h3 id="gobby-bombs" class="a-length">Gobby Bombs</h3>
+                <img class="gobby-bomg-img" src="img/gobby-bombs.png">
+                <p style="margin-top:20px;">
+                    The mercenary will fire rounds up into the air and placing AoEs under random players. Simply move out of the AoE circles to avoid this.
+                </p>
+            </div>
+
+            <div class="the-machina">
+                <h1 id="machina" class="a-length">The Machina</h1>
+                <br>
+                <h2 id="cc" class="a-length"><span id="cruise-chaser-icon">Cruise Chaser</span></h2>
+                <div class="cruise-images">
+                    <figure>
+                        <img src="img/red-cc.png">
+                        <figcaption>Red Cruise Chaser</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/blue-cc.png">
+                        <figcaption>Blue Cruise Chaser</figcaption>
+                    </figure>
+            </div>
+            <p>
+                <i style="display:flex; justify-content:center; font-size:17px;">A next-generation machina ideal for combat against enemy players and machina.</i>
+            </p>
+            <p>
+                Cruise Chaser specialises in killing players and destroying other machina.
+                <br>
+                <br>
+                Use this machina to escort your teams Oppressors/Brute Justices and defend against the enemy’s Oppressors/Brute Justices.
+            </p>
+            <h3>Stats:</h3>
+            <ul>
+                <li>HP: 50,000</li>
+                <li>Required CE to deploy: 50</li>
+                <li>Deployment Requirement: None</li>
+                <li>Maximum Simultaneous Units Deployed: 6</li>
+            </ul>
+            <br>
+            <br>
+            <div class="cc-actions">
+            <h3>Actions:</h3>
+            <ul>
+                <li id="spin-crusher"><b>Spin Crusher</b></li>
+                <p><i>Delivers an attack with a potency of 10,000 to all opposing warmachina in a cone before you. 1000 when attacking a player, mammet, or object.</i>
+                    <br>
+                    <br>
+                    This skill is solely for the the use against enemy machina. Use this against enemy Chasers, Oppressors and Brute Justices only. This skill is ineffective against players, 
+                    mammets and structures.
+                </p>
+                <li id="laser-x"><b>Laser Sword X</b></li>
+                <p>
+                    <i>Delivers an attack with a potency of 12,500 to all opposing players and warmachina in a cone before you. 1,250 when attacking a mammet or object.</i>
+                    <br>
+                    <br>
+                    This skill is solely for the use against enemy players. This skill can be used against machina as well but Spin Crusher is usually a better option due to its faster recast time. This skill is 
+                    ineffective against mammets and structures.
+                </p>
+                <li id="optical-sight"><b>Optical Sight</b></li>
+                <p><i>Deals magic damage with a potency of 7,500 to all opposing players and warmachina near point of impact. 750 when attacking a mammet or object.</i>
+                <br>
+                <br>
+                This skill is solely for the use against enemy players or machina. Use this skill to zone enemies and in conjunction with Laser Sword X for maximum efficiency. This skill is 
+                ineffective against mammets and structures.
+                </p>
+            </ul>
+            </div>
+            <h2 id="opp" class="a-length"><span id="oppressor-icon">Oppressor</span></h2>
+                <div class="oppressor-images">
+                    <figure>
+                        <img src="img/red-oppressor.png">
+                        <figcaption>Red Oppressor</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/blue-oppressor.png">
+                        <figcaption>Blue Oppressor</figcaption>
+                    </figure>
+            </div>
+            <p>
+                <i style="display:flex; justify-content:center; font-size:17px;">A hulking machina engineered for siege warfare, it excels at wreaking havoc upon structures.</i>
+            </p>
+            <p>
+                These machina specialise solely in destroying structures. These machina can make or break games and only two can be deployed at a time.
+                Use these machina to destroy towers and cores. Try to stay close to teammates as this machina has pratically no self-defense against the enemy.
+            </p>
+            <h3>Stats:</h3>
+            <ul>
+                <li>HP: 100,000</li>
+                <li>Required CE to deploy: 50</li>
+                <li>Deployment Requirement: None</li>
+                <li>Maximum Simultaneous Units Deployed: 2</li>
+            </ul>
+            <br>
+            <br>
+            <div class="oppressor-actions">
+            <h3>Actions:</h3>
+            <ul>
+                <li id="steam-release"><b>Steam Release</b></li>
+                <p><i>Deals magic damage to all opposing players and warmachina nearby with a potency of 2,500. 250 when attacking a mammet or object.
+                    <br>
+                    Additional Effect: 15-yalm knockback</i>
+                    <br>
+                    <br>
+                    This skill is solely for the purpose against enemy players. Mainly used as a tool to buy yourself time against players by pushing them away while you make your way towards 
+                    objectives or while you wait for your next missile to be ready. This skill is ineffective against mammets, machina and structures.
+                </p>
+                <li id="ton-missile"><b>3,000 Ton Missile</b></li>
+                <p>
+                    <i>Deals magic damage with a potency of 250,000 to all objects near point of impact. 5,000 to opposing players, warmachina, or mammets. Potency decreases the greater the 
+                    target’s distance from point of impact, to a maximum of 30 yalms.</i>
+                    <br>
+                    <br>
+                    This skill is solely for the purpose of destroying structures. Do NOT use this skill on anything but towers and cores. Try to land direct shots on top of objectives for 
+                    maximum efficiency as each missile consumes 200 EP. This skill is ineffective against players, machina and mammets.
+                </p>
+            </ul>
+            </div>
+            <h2 id="brute" class="a-length"><span id="brute-justice-icon">Brute Justice</span></h2>
+                <div class="brute-images">
+                    <figure>
+                        <img src="img/red-brute.png">
+                        <figcaption>Red Brute Justice</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/blue-brute.png">
+                        <figcaption>Blue Brute Justice</figcaption>
+                    </figure>
+            </div>
+            <p>
+                <i style="display:flex; justify-content:center; text-align:center; font-size:17px;">
+                Boasting unrivaled power, Brute Justice dominates opposing players on the battlefield,
+                <br>
+                while also laying waste to structures with its lethal armaments.</i>
+            </p>
+            <p>
+                These machina specialise in all categories. Each team can only deploy one after a friendly tower has been destroyed. These machina are for the sole purpose of “Comebacks” and 
+                should only be used by pilots who are highly experienced.
+            </p>
+            <h3>Stats:</h3>
+            <ul>
+                <li>HP: 75,000</li>
+                <li>Required CE to deploy: 50</li>
+                <li>Deployment Requirement: Losing a tower</li>
+                <li>Maximum Simultaneous Units Deployed: 2</li>
+            </ul>
+            <br>
+            <br>
+            <div class="brute-actions">
+            <h3>Actions:</h3>
+            <ul>
+                <li id="double-rocket"><b>Double Rocket Punch</b></li>
+                <p><i>Deals physical damage with a potency of 150,000 to all objects near point of impact. 7,500 when attacking opposing players, warmachina, or mammets.
+                    <br>
+                    Additional Effect: Stun
+                    <br>
+                    Duration: 3s</i>
+                    <br>
+                    <br>
+                    This is the Brute Justice’s ultimate skill as it can be used effectively against anything. Use it to stun players on foot to combo them into Flarethrower or Megabeam. The 
+                    skill can also be used to kill mammets giving you the power to push a lane solo and gain CE for yourself to refill if needed. This skill can also be used as a strong tool 
+                    against structures.
+                </p>
+                <li id="flamethrower"><b>Flamethrower</b></li>
+                <p>
+                    <i>Deals fire damage with a potency of 10,000 to all opposing players and warmachina in a cone before you. 1,000 when attacking a mammet or object.</i>
+                    <br>
+                    <br>
+                    This skill is solely for the use against enemy players and machina. Use this in conjunction with Double Rocket Punch for maximum efficiency against players on foot. This 
+                    skill is ineffective against mammets and structures.
+                </p>
+                <li id="mega-beam"><b>Mega-Beam</b></li>
+                <p>
+                    <i>Delivers magic damage with a potency of 15,000 to all opposing players and warmachina in a straight line before you. 1,500 when attacking a mammet or object.
+                    <br>
+                    Additional Effect: 30-yalm knockback</i>
+                    <br>
+                    <br>
+                    This skill is solely for the use against enemy players and machina. Use this in conjunction with Double Rocket punch for maximum efficiency against players on foot. This 
+                    skill is ineffective against mammets and structures.
+                </p>
+            </ul>
+            </div>
+            <div class="universal-actions">
+            <h3 style="margin-bottom:20px;">Universal Machina Actions:</h3>
+            <ul>
+                <li id="ceruleum-refill"><b>Ceruleum Refill</b></li>
+                <p><i>Uses 25 units of ceruleum fuel (CE) to restore 500 EP to currently mounted warmachina.</i>
+                    <br>
+                    <br>
+                    All machina have this skill and it is used solely for the purpose of refilling EP which is essentially MP for machina. You should only ever use this skill if your machina 
+                    is healthy or if you’re piloting a Brute Justice and need more EP.
+                    <br>
+                    Machina have no means of restoring hp so be mindful of this.
+                </p>
+                </ul>
+            <ul>
+                <li id="dismount"><b>Dismount</b></li>
+                <p><i>Exit the warmachina.</i>
+                    <br>
+                    <br>
+                    All machina have this skill. Dismounting and healing up with potions and spells will allow you to use <br> <span id="return-icon"><strong>Return</strong></span> to get into another mech while avoiding feeding the enemy team 
+                    an extra <span id="soaring-icon"><strong>Soaring</strong></span> stack.
+                </p>
+            </ul>
+            </div>
+
+            <div class="strategies">
+                <h1 id="strategies" class="a-length">Strategies & Tips</h1>
+                <p>
+                    Here are some strategies and tips that you may be able to implement to help give you an edge against the opposing team:
+                </p>
+                <figure>
+                    <img src="img/map.png">
+                    <figcaption>Detailed Hidden Gorge Map With Objectives And Ranges</figcaption>
+                </figure>
+                <p>
+                    The following map shows objectives and action ranges in addition to preferred spots for Oppressor to shoot missiles and be out of range of cannons, or certain locations 
+                    that are suitable for knocking people away with <span id="steam-release-sm"><strong>Steam Release</strong></span>
+                </p>
+                <h2 id="mammet-rushing" class="a-length">Mammet Rushing</h2>
+                <p>
+                    This strategy is simple but can be extremely effective if left unattended by the other team. Decide with your team which lane you want to rush mammets with and destroy the 
+                    objective as quickly as possible.
+                    <br>
+                    <br>
+                    Ideally, you want to push the lane where the mercenary will spawn in order to have a better chance of capturing him later.
+                </p>
+                <h2 id="oppressor-rushing" class="a-length">Oppressor Rushing</h2>
+                <p>
+                    This strategy involves everyone in the party to be a CE collector at the start of the game. Doing so allows the designated pilot player to mech up as an Oppressor as soon 
+                    as possible.
+                    <br>
+                    <br>
+                    Ideally, you want to push out an Oppressor in less than two minutes into the game in an attempt to catch the opposing team off guard.
+                </p>
+                <h2 id="tower-holding" class="a-length">Tower Holding</h2>
+                <p>
+                    This strategy involves damaging a tower to extremely low hp and leaving it alone to destroy later. You’ll do this with both towers and ideally destroy both at the same time. 
+                    This is to deny the opposing team access to piloting Brute Justice’s right away and allow your team to have momentum control.
+                </p>
+                <h2 id="gorge-sniping" class="a-length">Gorge Sniping</h2>
+                <p>
+                    This strategy involves landing missiles as an Oppressor from the center of the map. The angle and placement of the cursor varies depending on geography but this can be 
+                    useful if the opposing team isn’t manning their cannons.
+                </p>
+                <!--
+                    <div class="twitch-video">
+                    <iframe src="https://clips.twitch.tv/embed?clip=PoliteTemperedFerretNotATK-r5En5DxpPo6ChVKC&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" 
+                    ></iframe>
+                    </div>
+                -->
+                <h2 id="blind-siding" class="a-length">Blind Siding Cannons</h2>
+                <p>
+                    You can avoid the cannons range by hugging the wall away from them in the safe areas as shown in our map above, or even with going beneath the cannon platform and dropping 
+                    a missile. This can be extremely useful when trying to land missiles as an Oppressor on the enemy’s core.
+                </p>
+                <h2 id="cannon-sniping" class="a-length">Cannon Sniping</h2>
+                <p>
+                    This strategy involves rushing into the enemy’s base and killing the players mounted on the cannons to stop them from firing at your team.
+                </p>
+                <h2 id="geyser-hopping" class="a-length">Geyser Hopping</h2>
+                <p>
+                    The geysers that erupt near South lane can be used to hop into the lane to save you time from traveling all the way around.
+                </p>
+                <h2 id="map-it-out" class="a-length">Map It Out</h2>
+                <p>
+                    Try to keep your map open at all times. Objectives and machina are all marked so it provides vital information.
+                </p>
+            </div>
+
+            <div class="rewards">
+                <h1 id="rewards" class="a-length">Rewards</h1>
+                <p>
+                    Rival Wings provides many different rewards for your time.
+                    <br>
+                    <br>
+                    Here’s what you can earn:
+                </p>
+                <ul>
+                    <li>Exp: Varies per level. Half exp is given for a loss.</li>
+                    <li>Max Level Allagan Tomestones: 50 non-weekly-capped tomes. 20 weekly-capped tomes. Must be max level. Same for win/loss.</li>
+                    <li>PVP Exp: 1000 if win. 500 if loss.</li>
+                    <li>Wolf Marks: 1000 if win. 500 if loss.</li>
+                    <li>Allagan Tomestone of Poetics: 50. Must be at least level 50. Same for win/loss.</li>
+                </ul>
+                <h2>Mounts</h2>
+                <ul>
+                    <li><a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/item/dd633bb5cf6/" target="_blank">Magitek Avenger Identification Key</a> - 100 Rival Wings wins</li>
+                    <li><a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/item/771c858150a/" target="_blank">Magitek Avenger A-1 Identification Key</a> - 100 Hidden Gorge wins</li>
+                </ul>
+                <h2>Titles</h2>
+                <ul>
+                    <li><a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/achievement/8f10d6b0662/" target="_blank">Wings Of Steel</a> - 1000 Rival Wings matches played</li>
+                    <li><a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/achievement/e4fc0817410/" target="_blank">Wings Of Fire</a> - 1000 Rival Wings wins</li>
+                </ul>
+            </div>
+            <footer>
+            </footer>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('.yt-video').fitVids();
+        });
+    </script>
+    <script src="js/js.js"></script>
+</body>
+</html>

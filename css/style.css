@@ -1,0 +1,768 @@
+* {margin:0; padding:0; box-sizing: border-box}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:url('../img/background.jpg') no-repeat center fixed;
+    background-size:cover;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1;
+    display:flex;
+    justify-content:space-between;
+    background-color:#F5EFEF;
+    height:100px;
+    padding:20px;
+}
+
+.profile-content{
+    float:right;
+    text-align:center;
+    margin:10px 0 0 10px;
+}
+
+.profile-content p:first-child{
+    border-bottom: 3px solid #CFACAC;
+}
+.profile-content, .twitch{
+    font-family:'Inria Serif';
+}
+
+.twitch-name{
+    float:right;
+    text-align:center;
+    margin-top:25px;
+}
+
+header div h1{
+    font-family:'Inria Serif';
+    font-weight:normal;
+    text-align:center;
+    margin-top:-10px;
+}
+
+a{
+    color:black;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#804949;
+    text-decoration:underline;
+}
+
+aside a:visited{
+    color:black;
+}
+
+aside a:hover{
+    color:#804949;
+}
+
+aside a:active{
+    color:#804949;
+}
+
+aside a.lastclicked{
+    color:#804949;
+}
+
+.content{
+    display:flex;
+    background-color:rgb(245,239,239, 0.75);
+    width:100%;
+    align-items:flex-start;
+}
+
+.toc-list{
+    font-family:'Karla';
+    font-size:17px;
+}
+
+.toc-title h1{
+    display:inline-block;
+    font-family:'Inria Serif';
+    font-size:25px;
+    font-weight:normal;
+    padding:0px 10px 10px 10px;
+    margin:36px 0 0 70px;
+}
+
+.toc-title{
+    background-color:rgb(245,239,239, 0.2);
+    border-bottom:3px solid #CFACAC;
+}
+
+.toc-list ul{
+    padding:20px 0 0 50px;
+    width:350px;
+    list-style-type:none;
+}
+
+.accordion .subheading{
+    text-indent:30px;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.5s, padding 0.5s;
+}
+
+.accordion li label{
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+}
+
+label::before{
+    content: '+';
+    font-weight:bold;
+    margin-right:20px;
+}
+
+input[type="radio"]{
+    display:none;
+}
+
+.accordion input[type="radio"]:checked + label + .subheading{
+    max-height:400px;
+    padding:20px;
+} 
+
+.accordion input[type="radio"]:checked + label::before{
+    content:'-';
+    font-weight:bold;
+}
+
+.subheading h1{
+    font-size:17px;
+    font-weight:normal;
+}
+
+.subheading h1{
+    padding:5px;
+}
+
+li+li{
+    margin-top:10px;
+}
+
+aside{
+    position:sticky;
+    top:100px;
+    height:100vh;
+    border-right:solid 3px #CFACAC;
+}
+
+.a-length{
+    scroll-margin:120px;
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+    width:65%;
+    height:100%;
+    overflow:hidden;
+}
+
+main h1{
+    background-color:rgba(250,250,250, 0.2);
+    display:inline-block;
+    font-family:'Inria Serif';
+    font-size:30px;
+    padding:10px;
+    margin:80px 60px 20px 0;
+    border-bottom:3px solid #CFACAC;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+}
+
+.soaring-flying h1, .gob-merc h1{
+    margin-top:50px;
+}
+
+
+main h2{
+    display:inline-block;
+    font-family:'Karla';
+    font-size:25px;
+    margin:0 0 10px 45px;
+}
+
+main h3{
+    display:inline-block;
+    font-family:'Karla';
+    font-size:21px;
+    margin:0 0 10px 70px;
+}
+
+ main p{
+    font-family:'Karla';
+    font-size:19px;
+    line-height:1.4;
+    padding:0 0 30px 80px;
+    text-align:justify;
+    width:90%;
+}
+
+.cc-actions p{
+    width:90%;
+    margin-top:10px;
+    margin-left:-50px;
+}
+
+.oppressor-actions p{
+    width:90%;
+    margin-top:10px;
+    margin-left:-50px;
+}
+
+.brute-actions p{
+    width:90%;
+    margin-top:10px;
+    margin-left:-50px;
+}
+
+.universal-actions p{
+    width:90%;
+    margin-top:10px;
+    margin-left:-50px;
+}
+
+.the-machina ul{
+    margin-left:100px;
+}
+
+.the-machina li{
+    font-family:'Karla';
+    font-size:19px;
+}
+
+.party-roles a{
+    color:#804949;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.party-roles a:hover{
+    text-decoration:underline;
+}
+
+figcaption{
+    padding:20px 0 20px 0;
+    text-align:center;
+    font-family:'Karla';
+    color:#804949;
+    font-weight:bold;
+}
+
+.merc-mech-images figcaption{
+    color:black;
+    font-weight:normal;
+    font-family:'Karla';
+    font-size:19px;
+    padding:20px 0 30px 120px;
+    width:80%;
+    margin-bottom:20px;
+}
+
+.merc-mech-images-2 figcaption{
+    color:black;
+    font-weight:normal;
+    font-family:'Karla';
+    font-size:19px;
+    padding:20px 0 30px 120px;
+    width:80%;
+    margin-bottom:20px;
+}
+
+.cruise-images figcaption{
+    margin-right:100px;
+}
+
+.brute-images figcaption{
+    margin-right:-70px;
+}
+
+#cruise-chaser-icon::after{
+    content:"";
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    background:url('../img/cruise-chaser.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#spin-crusher::after{
+    content:"";
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    background:url('../img/spin-crusher.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#laser-x::after{
+    content:"";
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    background:url('../img/laser-x.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}  
+
+#optical-sight::after{
+    content:"";
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    background:url('../img/optical-sight.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#oppressor-icon::after{
+    content:"";
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    background:url('../img/oppressor.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#steam-release::after{
+    content:"";
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    background:url('../img/steam-release.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#steam-release-sm::after{
+    content:"";
+    display:inline-block;
+    width:24px;
+    height:32px;
+    margin-left:5px;
+    background:url('../img/steam-release.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#ton-missile::after{
+    content:"";
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    background:url('../img/ton-missile.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#brute-justice-icon::after{
+    content:"";
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    background:url('../img/brute-justice.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#double-rocket::after{
+    content:"";
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    background:url('../img/double-rocket.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#flamethrower::after{
+    content:"";
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    background:url('../img/flamethrower.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#mega-beam::after{
+    content:"";
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    background:url('../img/mega-beam.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#ceruleum-refill::after{
+    content:"";
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    background:url('../img/ceruleum-refill.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#dismount::after{
+    content:"";
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:10px;
+    background:url('../img/dismount.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+.basic-objectives img{
+    display:block;
+    margin:0 auto;
+    min-width:450px;
+    max-width:80%;
+    height:auto;
+    border:3px solid #90B0CD;
+    border-radius:2px;
+}
+
+.strategies img{
+    display:block;
+    margin:0 auto;
+    min-width:450px;
+    max-width:80%;
+    height:auto;
+    border:3px solid #90B0CD;
+    border-radius:2px;
+}
+
+.ceruleum-engines img{
+    display:block;
+    margin:0 auto;
+    min-width:450px;
+    max-width:60%;
+    height:auto;
+    border:3px solid #90B0CD;
+    border-radius:2px;
+}
+
+.gobby-bomg-img{
+    display:block;
+    margin:0 auto;
+    min-width:450px;
+    max-width:50%;
+    height:auto;
+    border:3px solid #90B0CD;
+    border-radius:2px;
+}
+
+.tower-images, .core-images{
+    display:flex;
+    justify-content:space-around;
+    max-width:95%;
+    min-width:450px;
+}
+
+.gobtanks-images, .gob-merc-images, .merc-mechs, .cruise-images, .oppressor-images, .brute-images{
+    display:flex;
+    justify-content:space-around;
+    max-width:100%;
+    min-width:450px;
+}
+
+.merc-mech-images, .merc-mech-images-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    text-align:center;
+}
+
+.merc-mech-images img, .merc-mech-images-2 img{
+    border:3px solid #90B0CD;
+}
+
+.merc-mech-images h3, .merc-mech-images-2 h3{
+    margin-right:65px;
+}
+
+.rewards ul{
+    padding-bottom:30px;
+}
+
+.rewards a{
+    color:#804949;
+    text-decoration:underline;
+    font-weight:bold;
+}
+
+#soaring-icon::after{
+    content:"";
+    display:inline-block;
+    width:24px;
+    height:32px;
+    margin-left:5px;
+    background:url('../img/soaring.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#flying-high-icon::after{
+    content:"";
+    display:inline-block;
+    width:24px;
+    height:32px;
+    margin-left:5px;
+    background:url('../img/flying-high.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#ceruleum-tank-icon::after{
+    content:"";
+    display:inline-block;
+    width:35px;
+    height:35px;
+    margin-left:10px;
+    background:url('../img/ceruleum-tank.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#ceruleum-tank-icon-sm::after{
+    content:"";
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin-left:10px;
+    background:url('../img/ceruleum-tank.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#gobtanks-icon::after{
+    content:"";
+    display:inline-block;
+    width:35px;
+    height:35px;
+    margin-left:10px;
+    background:url('../img/gobtanks.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#gobtanks-icon-sm::after{
+    content:"";
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin-left:10px;
+    background:url('../img/gobtanks.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#gobbiejuice-icon::after{
+    content:"";
+    display:inline-block;
+    width:35px;
+    height:35px;
+    margin-left:10px;
+    background:url('../img/gobbiejuice.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#gobbiejuice-icon-sm::after{
+    content:"";
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin-left:10px;
+    background:url('../img/gobbiejuice.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#gobcrates-icon::after{
+    content:"";
+    display:inline-block;
+    width:35px;
+    height:35px;
+    margin-left:10px;
+    background:url('../img/gobcrates.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#gobcrates-icon-sm::after{
+    content:"";
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin-left:10px;
+    background:url('../img/gobcrates.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#merc-icon::after{
+    content:"";
+    display:inline-block;
+    width:35px;
+    height:35px;
+    margin-left:10px;
+    background:url('../img/merc.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+#return-icon::after{
+    content:"";
+    display:inline-block;
+    width:24px;
+    height:32px;
+    margin-left:5px;
+    background:url('../img/return.png') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+footer{
+    height:300px;
+}
+
+@media (max-width:1474px){
+    .tower-images, .core-images, .gobtanks-images, .merc-mechs{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        max-width:95%;
+        min-width:450px;
+        }
+    }
+
+@media(max-width:1340px){
+    .merc-mech-images-2{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+@media(max-width:1235px){
+    .cruise-images, .oppressor-images, .brute-images{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        max-width:100%;
+        min-width:450px;
+        text-align:center;
+    }
+}
+
+@media(max-width:1194px){
+    .gob-merc-images{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        max-width:100%;
+        min-width:450px;
+        text-align:center;
+    }
+}
+
+@media (max-width:1023px){
+    .tower-images, .core-images{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        max-width:95%;
+        min-width:450px;
+    }
+
+
+    .merc-mech-images{
+        display:grid;
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+}
+
+@media (max-width:868px){
+    .profile-content, .twitch-name{
+        display:none;
+    }
+}
+
+@media (max-width:649px){
+    header div h1{
+        font-size:22px;
+        margin-top:-5px;
+    }
+}
+
+@media (max-width:500px){
+    main{
+        padding:0px;
+        width:100%;
+    }
+
+    main h1{
+        padding-left:20px;
+    }
+
+    .merc-mech-headers, .merc-mech-images{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+@media (max-width:850px){
+    aside{
+        display:none;
+    }
+    main{
+        margin:0 auto;
+        padding-left:0px;
+        width:90%;
+    }
+}
+
+@media (max-width:780px){
+    aside{
+        display:none;
+    }
+
+    main{
+        margin:0 auto;
+    }
+}
+
+
+
