@@ -652,9 +652,20 @@ figcaption{
     vertical-align: middle;
 }
 
-
 footer{
     height:300px;
+}
+
+@media(max-width:1560px){
+    iframe{
+        margin-left:0;
+    }
+}
+
+@media(max-width:1400px){
+    iframe{
+        width:500;
+    }
 }
 
 @media (max-width:1474px){
