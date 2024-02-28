@@ -1,5 +1,5 @@
 $(window).scroll(function(e) {   
-    if($(window).scrollTop() >=16532) {
-       $(window).scrollTop(16532);
+    if($(window).scrollTop() >=17093) {
+       $(window).scrollTop(17093);
     }
 });
