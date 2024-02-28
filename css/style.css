@@ -93,7 +93,6 @@ aside a.lastclicked{
     margin:16px 0 0 170px;
 }
 
-
 .toc-title{
     background-image: linear-gradient(to right, rgba(250,250,250,0.1), rgba(250, 250, 250, 0.2));
     border-bottom:3px solid;
@@ -109,6 +108,7 @@ aside a.lastclicked{
     width:350px;
     list-style-type:none;
     text-align:right;
+
 }
 
 .accordion .subheading{
@@ -200,6 +200,7 @@ main h1{
     margin-top:50px;
 }
 
+
 main h2{
     display:inline-block;
     font-family:'Karla';
@@ -213,6 +214,7 @@ main h3{
     font-size:21px;
     margin:0 0 10px 70px;
 }
+
 
  main p{
     font-family:'Karla';
@@ -459,7 +461,7 @@ figcaption{
 .basic-objectives img{
     display:block;
     margin:0 auto;
-    min-width:450px;
+    min-width:360px;
     max-width:80%;
     height:auto;
     border:3px solid #90B0CD;
@@ -469,7 +471,7 @@ figcaption{
 .strategies img{
     display:block;
     margin:0 auto;
-    min-width:450px;
+    min-width:360px;
     max-width:80%;
     height:auto;
     border:3px solid #90B0CD;
@@ -479,7 +481,7 @@ figcaption{
 .ceruleum-engines img{
     display:block;
     margin:0 auto;
-    min-width:450px;
+    min-width:360px;
     max-width:60%;
     height:auto;
     border:3px solid #90B0CD;
@@ -489,7 +491,7 @@ figcaption{
 .gobby-bomg-img{
     display:block;
     margin:0 auto;
-    min-width:450px;
+    min-width:360px;
     max-width:50%;
     height:auto;
     border:3px solid #90B0CD;
@@ -500,14 +502,14 @@ figcaption{
     display:flex;
     justify-content:space-around;
     max-width:95%;
-    min-width:450px;
+    min-width:360px;
 }
 
 .gobtanks-images, .gob-merc-images, .merc-mechs, .cruise-images, .oppressor-images, .brute-images{
     display:flex;
     justify-content:space-around;
     max-width:100%;
-    min-width:450px;
+    min-width:360px;
 }
 
 .merc-mech-images, .merc-mech-images-2{
@@ -538,7 +540,7 @@ figcaption{
     content:"";
     display:inline-block;
     width:24px;
-    height:30px;
+    height:32px;
     margin-left:5px;
     background:url('../img/soaring.png') no-repeat;
     background-size:contain;
@@ -549,7 +551,7 @@ figcaption{
     content:"";
     display:inline-block;
     width:24px;
-    height:30px;
+    height:32px;
     margin-left:5px;
     background:url('../img/flying-high.png') no-repeat;
     background-size:contain;
@@ -648,7 +650,7 @@ figcaption{
     content:"";
     display:inline-block;
     width:35px;
-    height:30px;
+    height:35px;
     margin-left:10px;
     background:url('../img/merc.png') no-repeat;
     background-size:contain;
@@ -678,7 +680,7 @@ figcaption{
 }
 
 footer{
-    height:500px;
+    height:300px;
 }
 
 @media(max-width:1560px){
@@ -690,6 +692,12 @@ footer{
 @media(max-width:1400px){
     iframe{
         width:300;
+    }
+}
+
+@media (max-width:1050px){
+    .toc-title h1{
+        margin:16px 0 0 150px;
     }
 }
 
@@ -750,22 +758,9 @@ footer{
     }
 }
 
-@media (max-width:1050px){
-    .toc-title h1{
-        margin:16px 0 0 150px;
-    }
-}
-
 @media (max-width:868px){
     .profile-content, .twitch-name{
         display:none;
-    }
-}
-
-@media (max-width:649px){
-    header div h1{
-        font-size:22px;
-        margin-top:-5px;
     }
 }
 
@@ -775,8 +770,18 @@ footer{
         width:100%;
     }
 
+    main p{
+        padding:10px;
+        width:100%;
+    }
+
     main h1{
-        padding-left:20px;
+        width:100%;
+    }
+
+    header div h1{
+        font-size:18px;
+        margin-top:-5px;
     }
 
     .merc-mech-headers, .merc-mech-images{
@@ -784,6 +789,107 @@ footer{
         flex-direction:column;
         text-align:center;
     }
+
+    main h3, main h2{
+        margin:0 0 10px 10px;
+    }
+
+    .merc-mech-images figcaption, .merc-mech-images-2 figcaption{
+        padding:20px 0 30px 0;
+        width:100%;
+    }
+
+    .merc-mech-images h3, .merc-mech-images-2 h3{
+        margin-right:0;
+    }
+
+    .cc-actions p{
+        width:100%;
+        margin:0 auto;
+    }
+    
+    .oppressor-actions p{
+        width:100%;
+        margin:0 auto;
+    }
+    
+    .brute-actions p{
+        width:100%;
+        margin:0 auto;
+    }
+
+    .universal-actions p{
+        width:100%;
+        margin:0 auto;
+    }
+    
+    .the-machina ul{
+        margin-left:30px;
+    }
+
+    @media (max-width:360px){
+        .basic-objectives img{
+            min-width:100%;
+            height:auto;
+        }
+
+        .tower-images figure img, .core-images figure img{
+            min-width:80%;
+            margin-left:20px;
+        }
+
+        .cruise-images figure img, .oppressor-images figure img, .brute-images figure img{
+            width:70%;
+            margin-left:-120px;
+        }
+
+        .merc-mech-images-2 figure img{
+            width:80%;
+        }
+
+        .tower-images figcaption, .core-images figcaption{
+            margin-left:-20px;
+        }
+
+        .oppressor-images figcaption{
+            margin-left:-100px;
+        }
+
+        .brute-images figcaption{
+            margin-left:-150px;
+        }
+        
+        .strategies img{
+            min-width:100%;
+            height:auto;
+        }
+        
+        .ceruleum-engines img{
+            display:block;
+            margin:0 auto;
+            min-width:100%;
+            height:auto;
+        }
+        
+        .gobby-bomg-img{
+            min-width:100%;
+            height:auto;
+        }
+        
+        .tower-images, .core-images{
+            min-width:360px;
+        }
+
+        .merc-mech-images-2 img{
+            min-width:300px;
+        }
+        
+        .gobtanks-images, .gob-merc-images{
+            min-width:100%;
+        }
+        
+    }
+    
 }
 
 @media (max-width:850px){
