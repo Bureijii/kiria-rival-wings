@@ -768,6 +768,26 @@ footer{
     }
 }
 
+@media (max-width:632px){
+    header div h1{
+        font-size:30px;
+        margin-top:-5px;
+    }
+}
+
+@media (max-width:602px){
+    header div h1{
+        font-size:25px;
+        margin-top:0;
+    }
+}
+
+@media (max-width:528px){
+    header div h1{
+        font-size:20px;
+    }
+}
+
 @media (max-width:500px){
     main{
         padding:0px;
@@ -783,10 +803,6 @@ footer{
         width:100%;
     }
 
-    header div h1{
-        font-size:18px;
-        margin-top:-5px;
-    }
 
     .merc-mech-headers, .merc-mech-images{
         display:flex;
@@ -832,6 +848,12 @@ footer{
     }
 
     @media (max-width:360px){
+
+        header div h1{
+            font-size:18px;
+            padding-inline:10px;
+        }
+
         .basic-objectives img{
             min-width:100%;
             height:auto;
