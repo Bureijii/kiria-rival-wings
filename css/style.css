@@ -39,6 +39,11 @@ header{
     margin-top:25px;
 }
 
+.twitch img{
+    margin-top:20px;
+    margin-right:10px;
+}
+
 header div h1{
     font-family:'Inria Serif';
     font-weight:normal;
@@ -108,7 +113,6 @@ aside a.lastclicked{
     width:350px;
     list-style-type:none;
     text-align:right;
-
 }
 
 .accordion .subheading{
