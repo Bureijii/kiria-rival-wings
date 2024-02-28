@@ -750,6 +750,12 @@ footer{
     }
 }
 
+@media (max-width:1050px){
+    .toc-title h1{
+        margin:16px 0 0 150px;
+    }
+}
+
 @media (max-width:868px){
     .profile-content, .twitch-name{
         display:none;
