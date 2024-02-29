@@ -918,6 +918,58 @@ footer{
     
 }
 
+@media (max-width:398px){
+    .basic-objectives img{
+        min-width:95%;
+        height:auto;
+    }
+
+    .tower-images, .core-images{
+        min-width:80%;
+        margin-left:10px;
+    }
+
+    .ceruleum-engines img{
+        display:block;
+        margin:0 auto;
+        min-width:95%;
+        height:auto;
+    }
+
+    .gobtanks-images, .gob-merc-images{
+        min-width:95%;
+    }
+
+    .merc-mech-images-2 figure img{
+        width:95%;
+    }
+
+    .gobby-bomg-img{
+        min-width:95%;
+        height:auto;
+    }
+
+    .cruise-images figure img, .oppressor-images figure img, .brute-images figure img{
+        width:80%;
+        margin-left:-120px;
+    }
+
+    .oppressor-images figcaption{
+        margin-left:-100px;
+    }
+
+    .brute-images figcaption{
+        margin-left:-150px;
+    }
+
+    .strategies img{
+        min-width:95%;
+        height:auto;
+    }
+    
+
+}
+
 @media (max-width:850px){
     aside{
         display:none;
