@@ -125,8 +125,18 @@
                             
                         </div>
                     </li>
-
-                    <li><a href="#rewards">Rewards</li></a>
+                    <li>
+                        <div id="play-music">
+                            <img src="img/orch-roll.png" onClick="playMySong()">
+                        </div>
+                        
+                        <div id="song"> 
+                            <audio id="myAudio">
+                                <source src="music/FFXIV_OST_Rival_Wings_Astragalos_Theme.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        FFXIV OST - Rival Wings Astragalos Theme
+                    </li>
                 </ul>
             </div>
         </aside>
@@ -134,6 +144,19 @@
         <main>
             <div class="rival-wings">
                 <h1 id="rival-wings" class="a-length" style="padding-top:10px; margin-top:20px;" >What Is Rival Wings?</h1>
+                <span class="audio-mobile">
+                    <div id="play-music">
+                        <img src="img/orch-roll.png" onClick="playMySong()">
+                    </div>
+                    
+                    <div id="song"> 
+                        <audio id="myAudio">
+                            <source src="music/FFXIV_OST_Rival_Wings_Astragalos_Theme.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                    <h4>FFXIV OST - Rival Wings Astragalos Theme</h4>
+                </span>
+                <br>
                 <p>
                     Rival Wings is a 24 v 24 PVP mode for players of at least Lv. 30 with elements inspired from MOBAs such as creeps (mammets), laning, towers and cores, with some FFXIV twists 
                     such as the ability to pilot mechs (machina).
@@ -708,12 +731,12 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/jquery.fitvids.js"></script>
-
     <script>
         jQuery(document).ready(function(){
             jQuery('.twitch-video').fitVids();
         });
     </script>
     <script src="js/color-stay.js"></script>
+    <script src="js/play-music.js"></script>
 </body>
 </html>

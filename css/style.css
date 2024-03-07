@@ -706,6 +706,42 @@ figcaption{
     vertical-align:text-bottom;
 }
 
+.accordion li img{
+    width:50px;
+    height:50px;
+    cursor:pointer;
+}
+
+.rival-wings span img{
+    width:50px;
+    height:50px;
+    cursor:pointer;
+    margin-left:80px;
+}
+
+.rival-wings span h4{
+    font-family:'Karla';
+    color:#804949;
+    font-weight:bold;
+    margin-left:80px;
+}
+
+.accordion li:last-child{
+    position: fixed; 
+    bottom:0%;
+    padding:10px 0 10px 0;
+    font-family:'Karla';
+    color:#804949;
+    font-weight:bold;
+    font-size:13px;
+    text-align:center;
+}
+
+.rival-wings span{
+    display:none;
+}
+
+
 footer{
     height:300px;
 }
@@ -859,7 +895,7 @@ footer{
     }
 
     main p{
-        text-align:center;
+    
         padding:0 10px 30px 10px;
 
     }
@@ -911,6 +947,26 @@ footer{
         margin:0 auto;
         padding-left:0px;
         width:90%;
+    }
+
+    .rival-wings span{
+        display:block;
+    }
+
+    .rival-wings span img{
+        margin-left:5px;
+    }
+
+    .rival-wings span h4{
+        margin-left:5px;
+        font-size:15px;
+    }
+    
+}
+
+@media (max-width:280px){
+    .rival-wings span h4{
+        font-size:11px;
     }
 }
 
