@@ -774,6 +774,7 @@ figcaption{
 
 .title h2{
     font-weight:normal;
+    font-family:'Inria Serif';
 }
 
 .title h3{
@@ -881,6 +882,12 @@ footer{
         font-size:25px;
     }
 
+}
+
+@media (max-width:507px){
+    .title h2{
+        font-size:20px;
+    }
 }
 
 @media (max-width:500px){
