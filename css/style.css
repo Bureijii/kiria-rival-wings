@@ -1035,10 +1035,17 @@ footer{
     }
 }
 
-@media (max-width:284px){
+@media (max-width:289px){
     
     header div h1{
         margin-top:-10px;
+    }
+}
+
+@media (max-width:284px){
+    
+    header div h1{
+        margin-top:-15px;
     }
 }
 
