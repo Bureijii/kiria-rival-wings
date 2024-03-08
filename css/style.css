@@ -884,7 +884,7 @@ footer{
 
 }
 
-@media (max-width:507px){
+@media (max-width:513px){
     .title h2{
         font-size:20px;
     }
@@ -967,17 +967,6 @@ footer{
         font-size:25px;
         margin-top:-5px;
     }
-
-    .title h2{
-        font-size:20px;
-    }
-
-    .title h3{
-        font-size:15px;
-    }
-}
-
-@media (max-width:430px){
 
     .title h2{
         font-size:20px;
