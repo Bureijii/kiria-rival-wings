@@ -7,6 +7,7 @@ html{
 body{
     background:url('../img/background.jpg') no-repeat center fixed;
     background-size:cover;
+    font-family:'Karla';
 }
 
 header{
@@ -42,6 +43,10 @@ header{
 .twitch img{
     margin-top:20px;
     margin-right:10px;
+}
+
+.title{
+    text-align:center;
 }
 
 header div h1{
@@ -294,9 +299,10 @@ figcaption{
     font-weight:normal;
     font-family:'Karla';
     font-size:19px;
-    padding:20px 0 30px 120px;
+
     width:80%;
     margin-bottom:20px;
+    height:auto;
 }
 
 .cruise-images figcaption{
@@ -726,6 +732,14 @@ figcaption{
     margin-left:80px;
 }
 
+.accordion li:nth-child(9){
+    position:fixed;
+    bottom:40px;
+    text-align:left;
+    font-size:15px;
+    margin-left:160px;
+}
+
 .accordion li:last-child{
     position: fixed; 
     bottom:0%;
@@ -737,7 +751,33 @@ figcaption{
     text-align:center;
 }
 
+#click-play::before{
+    content:"";
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin-left:5px;
+    background:url('../img/arrow-left.svg') no-repeat;
+    background-size:contain;
+    vertical-align:text-bottom;
+}
+
+#play-music span{
+    margin:0;
+    padding:0;
+    float:inline-block;
+}
+
 .rival-wings span{
+    display:none;
+}
+
+.title h2{
+    font-weight:normal;
+}
+
+.title h3{
+    font-family:'Karla';
     display:none;
 }
 
@@ -820,30 +860,27 @@ footer{
     }
 }
 
-@media (max-width:868px){
+@media (max-width:780px){
     .profile-content, .twitch-name{
         display:none;
     }
-}
-
-@media (max-width:632px){
-    header div h1{
-        font-size:30px;
-        margin-top:-5px;
-    }
-}
-
-@media (max-width:602px){
+ 
     header div h1{
         font-size:25px;
-        margin-top:0;
+        margin-top:-10px;
     }
+
+    .title h3{
+        display:block;
+    }
+  
 }
 
-@media (max-width:528px){
+@media (max-width:540px){
     header div h1{
-        font-size:20px;
+        font-size:25px;
     }
+
 }
 
 @media (max-width:500px){
@@ -895,47 +932,106 @@ footer{
     }
 
     main p{
-    
         padding:0 10px 30px 10px;
-
     }
 
-    header{
-        height:50px;
-    }
 
     .twitch img{
-        margin-top:-10px;
+        margin-top:20px;
         margin-right:-10px;
     }
 
     .profile img{
         width:40px;
         height:40px;
-        margin-top:-15px;
+        margin-top:10px;
         margin-left:-10px;
     }
 
-    .title span{
-        display:none;
+    header{
+        position:static;
     }
 
+
+}
+
+@media (max-width:430px){
     header div h1{
-        margin-top:-8px;
+        font-size:25px;
+        margin-top:-5px;
+    }
+
+    .title h2{
+        font-size:20px;
+    }
+
+    .title h3{
+        font-size:15px;
     }
 }
 
-@media (max-width:336px){
+@media (max-width:430px){
+
+    .title h2{
+        font-size:20px;
+    }
+
+    .title h3{
+        font-size:15px;
+    }
+}
+
+@media (max-width:388px){
+
+    header div h1{
+        font-size:22px;
+        margin-top:-5px;
+    }
+
+    .title h2{
+        font-size:18px;
+    }
+
+    .title h3{
+        font-size:15px;
+    }
+}
+
+@media (max-width:356px){
+    
+    header div h1{
+        font-size:20px;
+    }
+
+    .title h2{
+        font-size:15px;
+    }
+
+    .title h3{
+        font-size:15px;
+    }
+}
+
+@media (max-width:314px){
+    
     header div h1{
         font-size:18px;
-        margin-top:-5px;
+        margin-top:0;
+    }
+
+    .title h2{
+        font-size:13px;
+    }
+
+    .title h3{
+        font-size:13px;
     }
 }
 
-@media (max-width:302px){
+@media (max-width:284px){
+    
     header div h1{
-        font-size:16px;
-        margin-top:-5px;
+        margin-top:-10px;
     }
 }
 
