@@ -756,7 +756,6 @@ figcaption{
     display:inline-block;
     width:20px;
     height:20px;
-    margin-left:5px;
     background:url('../img/arrow-left.svg') no-repeat;
     background-size:contain;
     vertical-align:text-bottom;
@@ -786,19 +785,6 @@ figcaption{
 footer{
     height:300px;
 }
-
-@media(max-width:1560px){
-    iframe{
-        margin-left:0;
-    }
-}
-
-@media(max-width:1400px){
-    iframe{
-        width:300;
-    }
-}
-
 @media (max-width:1050px){
     .toc-title h1{
         margin:16px 0 0 150px;
