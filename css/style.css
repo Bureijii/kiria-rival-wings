@@ -781,10 +781,61 @@ figcaption{
     display:none;
 }
 
+/*.video-test{
+    margin:0 auto;
+    width:1000px;
+    height:600px;
+    border:1px solid red;
+    padding:20px;
+}
+
+.video-test figure, iframe{
+    width:100%;
+    height:100%;
+    border:1px solid yellow;
+}*/
+
+.twitch-video{
+    max-width:950px;
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+.twitch-link{
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+
+.twitch-video iframe, .twitch-video object, .twitch-video embed{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
 
 footer{
     height:300px;
 }
+
+/*@media(max-width:1560px){
+    iframe{
+        margin-left:0;
+    }
+}
+
+@media(max-width:1400px){
+    iframe{
+        width:300;
+    }
+}*/
+
 @media (max-width:1050px){
     .toc-title h1{
         margin:16px 0 0 150px;
