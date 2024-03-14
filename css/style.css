@@ -468,7 +468,7 @@ figcaption{
     vertical-align: middle;
 }
 
-.rival-wings img{
+div.rival-wings > figure > img.intro-img{
     display:block;
     margin:0 auto;
     min-width:250px;
