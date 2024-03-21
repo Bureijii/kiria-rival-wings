@@ -31,7 +31,7 @@ header{
     border-bottom: 3px solid #CFACAC;
 }
 .profile-content, .twitch{
-    font-family:'Inria Serif';
+    font-family:'Mate';
 }
 
 .twitch-name{
@@ -50,7 +50,7 @@ header{
 }
 
 header div h1{
-    font-family:'Inria Serif';
+    font-family:'Mate';
     font-weight:normal;
     text-align:center;
     margin-top:-10px;
@@ -94,13 +94,13 @@ aside a.lastclicked{
 }
 
 .toc-list{
-    font-family:'Karla';
+    font-family:'Mate SC';
     font-size:17px;
 }
 
 .toc-title h1{
     display:inline-block;
-    font-family:'Inria Serif';
+    font-family:'Mate SC';
     font-size:25px;
     font-weight:normal;
     padding:0px 10px 10px 10px;
@@ -195,7 +195,7 @@ main{
 main h1{
     background-image: linear-gradient(to left, rgba(250,250,250,0.1), rgba(250, 250, 250, 0.2));
     display:inline-block;
-    font-family:'Inria Serif';
+    font-family:'Mate';
     font-size:30px;
     padding:10px;
     margin:80px 60px 20px 0;
@@ -762,7 +762,7 @@ div.rival-wings > figure > img.intro-img{
     margin-left:80px;
 }
 
-.accordion li:nth-child(9){
+.accordion li:nth-child(11){
     position:fixed;
     bottom:40px;
     text-align:left;
@@ -803,7 +803,7 @@ div.rival-wings > figure > img.intro-img{
 
 .title h2{
     font-weight:normal;
-    font-family:'Inria Serif';
+    font-family:'Mate';
 }
 
 .title h3{
