@@ -287,7 +287,7 @@ figcaption{
     font-family:'Karla';
     color:#804949;
     font-weight:bold;
-    padding:10px 0 10px 0;
+    padding:10px 0 20px 0;
 }
 
 .merc-mech-images figcaption{
@@ -559,6 +559,25 @@ div.rival-wings > figure > img.intro-img{
     margin:0 auto;
     min-width:250px;
     max-width:70%;
+    height:auto;
+    border:3px solid #90B0CD;
+    border-radius:2px;
+}
+
+.mount-images{
+    display:flex;
+    justify-content:space-around;
+}
+
+.white, .blue{
+    width:540px;
+}
+
+.white img, .blue img{
+    display:block;
+    margin:0 auto;
+    min-width:250px;
+    max-width:100%;
     height:auto;
     border:3px solid #90B0CD;
     border-radius:2px;
