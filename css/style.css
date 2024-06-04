@@ -789,6 +789,7 @@ div.rival-wings > figure > img.intro-img{
     font-weight:bold;
     font-size:13px;
     text-align:center;
+    border: 1px solid red;
 }
 
 #click-play::before{
