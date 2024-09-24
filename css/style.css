@@ -187,7 +187,7 @@ aside{
 main{
     display:flex;
     flex-direction:column;
-    width:65%;
+    width:76%;
     height:100%;
     overflow:hidden;
 }
@@ -537,13 +537,13 @@ div.rival-wings > figure > img.intro-img{
     height:auto;
 }
 
-.tower-images, .core-images, .credentials-images, .mount-images{
+.tower-images, .core-images, .credentials-images-1, .credentials-images-2, .credentials-images-3, .mount-images{
     display:flex;
     justify-content:space-around;
     width:98%;
 }
 
-.credentials-images img:first-child{
+.credentials img:first-child{
     display:block;
     margin:0 auto;
     min-width:250px;
@@ -592,7 +592,8 @@ div.rival-wings > figure > img.intro-img{
 }
 
 .merc-mech-images h3{
-    margin-right:65px;
+    margin:0;
+    padding:10px;
 }
 
 .credentials ul{
